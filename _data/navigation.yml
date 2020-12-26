@@ -1,7 +1,13 @@
 # main links
 main:
+  - title : "home"
+    url : https://falconno7.github.io/
   - title : "About"
     url : /about/
+  - title : "Categories"
+    url : /cagegories/
+  - title : "Tags"
+    url : /tags/
   # - title: "Quick-Start Guide"
     # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"

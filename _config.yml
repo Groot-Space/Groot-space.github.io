@@ -293,3 +293,4 @@ defaults:
       comments: false
       share: true
       related: false
+      show_date: true

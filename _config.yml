@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Nest"
+title                    : "Inheritor blog (작성중 or 작성완료 : 운영체제, 자료구조, 알고리즘, 코딩테스트, 빅데이터, 통계)"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "inheritor blog"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Noh TaeHyun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a **student at Inha University**."
+  bio              : "I am a **Inha University student**."
   location         : "Korea, Incheon"
   email            : "xogusxogus39@naver.com"
   links:

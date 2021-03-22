@@ -1,7 +1,7 @@
 ---
-title : "블로그를 쓰는 목적 (작성중 or 작성완료 : 운영체제, 자료구조, 알고리즘, 코딩테스트, 빅데이터, 통계)"
-permalink : /about/
-layout : single
+title: "블로그를 쓰는 목적 (작성중 or 작성완료 : 운영체제, 자료구조, 알고리즘, 코딩테스트, 빅데이터, 통계)"
+permalink: /about/
+layout: single
 ---
 
 ## 블로그 개요

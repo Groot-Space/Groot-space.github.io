@@ -27,7 +27,7 @@ use_math: true
 
 ### 1. 정렬된 2개의 배열을 O(1)시간에 정렬하면서 합치는 방법.
 ![image1](/assets/images/merge_0.jpg)
-비교하는 횟수를 보시면, 두개의 배열의 크기와 비슷하게 흘러가는 것을 알 수 있습니다.
+* 비교하는 횟수를 보시면, 두개의 배열의 크기와 비슷하게 흘러가는 것을 알 수 있습니다.
 ![image2](/assets/images/merge_1.jpg)
 ![image3](/assets/images/merge_2.jpg)
 ![image4](/assets/images/merge_3.jpg)

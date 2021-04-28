@@ -14,7 +14,7 @@ use_math: true
 ---
 
 ## 1. 참고한 자료 및 출처
-백트래킹에 관련된 글은 [바킹독님 블로그](https://blog.encrypted.gg/955?category=773649)를 참고하였음을 밝힙니다.
+Merge Sort에 관련된 글은 [바킹독님 블로그](https://blog.encrypted.gg/955?category=773649)를 참고하였음을 밝힙니다.
 
 ## 2. Merge Sort란 ?
 1. 재귀적으로 수열을 나눠 정렬한 후 합치는 정렬방법입니다.

@@ -14,11 +14,10 @@ use_math: true
 Radix Sort에 관련된 글은 [바킹독님 블로그](https://blog.encrypted.gg/966?category=773649)를 참고하였음을 밝힙니다.
 
 ## 2. Radix Sort(기수정렬)란 ?
-1. 자릿수를 이용해 정렬을 수행하는 알고리즙입니다.
+1. 자릿수를 이용해 정렬을 수행하는 알고리wma입니다.
 2. 시간복잡도는 자릿수 = D, 리스트 개수 = K 라고 할 때, O(D(N+K))시간에 정렬이 가능하지만 K는 N에 비해 무시가 가능할 정도로 작기 때문에 O(DN)으로 표기합니다.
 
 ## 3. 프로세스 & 아이디어 설명.
-</br>
 
 ![image1](/assets/images/radix_0.jpg)
 ![image2](/assets/images/radix_1.jpg)

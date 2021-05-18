@@ -44,7 +44,6 @@ Quick Sort에 관련된 글은 [바킹독님 블로그](https://blog.encrypted.g
 ![image5](/assets/images/quick_sort_4.jpg)
 ![image6](/assets/images/quick_sort_5.jpg)
 
-</br>
 
 
 ### 2. Quick Sort 시간복잡도.

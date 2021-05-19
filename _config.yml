@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Inheritor blog (작성중 or 작성완료 : 운영체제, 자료구조, 알고리즘, 코딩테스트, 빅데이터, 통계)"
+title                    : "Groot blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "inheritor blog"
+name                     : "Groot blog"
 description              : "Inha-univ,머신러닝,딥러닝,코딩테스트,유용사이트정리,개인정리."
 url                      : "https://github.com/Falconno7/Falconno7.github.io" #"https://Falconno7.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Noh TaeHyun"
+  name             : "Noh TaeHyun(Groot)"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a **Inha University student**."
   location         : "Korea, Incheon"

@@ -94,8 +94,8 @@ analytics:
 # Site Author
 author:
   name             : "Noh TaeHyun(Groot)"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a **Inha University student**."
+  avatar           : /assets/images/Groot.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I was a **Inha University student**."
   location         : "Korea, Incheon"
   email            : "xogusxogus39@naver.com"
   links:
@@ -132,7 +132,7 @@ footer:
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: "https://github.com/Falconno7"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:

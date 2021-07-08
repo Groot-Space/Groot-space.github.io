@@ -24,7 +24,7 @@ description              : "Inha-univ,머신러닝,딥러닝,코딩테스트,유
 url                      : "https://github.com/Groot-Space/Groot-space.github.io" #"https://Falconno7.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/Groot-Space/Groot-space.github.io"
-teaser                   : "/assets/images/그루트.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/leaf.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/Inheritancecover.png"
 masthead_title           : "Hello Inheritor"
 # breadcrumbs            : false # true, false (default)
@@ -113,10 +113,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Falconno7/"
+      url: "https://github.com/Groot-Space/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://github.com/Groot-Space"
+      # url: "https://github.com/Groot-Space/"
 
 # Site Footer
 footer:

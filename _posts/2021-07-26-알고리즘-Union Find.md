@@ -19,9 +19,9 @@ use_math: true
 
 * 예시)
 
-![image1](/assets/images/Union_find_0.jpg)
+![image1](/assets/images/union_find_0.jpg)
 
-![image2](/assets/images/Union_find_1.jpg)
+![image2](/assets/images/union_find_1.jpg)
 
 ## 2. 알고리즘 프로세스
 ### 1. 표현 방법 및 Union 과정.

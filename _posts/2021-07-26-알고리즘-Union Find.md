@@ -18,7 +18,9 @@ use_math: true
 * 그래프 알고리즘의 하나로, 주어진 여러 그래프 중에서 집합을 찾는 알고리즘입니다. 그렇기 때문에 서로소 집합(Disjoint-Set) 알고리즘이라고도 불립니다.
 
 * 예시)
+
 ![image1](/assets/images/Union_find_0.jpg)
+
 ![image2](/assets/images/Union_find_1.jpg)
 
 ## 2. 알고리즘 프로세스

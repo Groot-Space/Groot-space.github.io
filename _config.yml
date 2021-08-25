@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/Groot-Space/Groot-space.github.io"
 teaser                   : "/assets/images/leaf.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/Inheritancecover.png"
-masthead_title           : "Hello Inheritor"
+masthead_title           : "I am Groot"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -75,7 +75,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/Inheritancecover.png" # Open Graph/Twitter default site image
+og_image                 : "/assets/images/Groot.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

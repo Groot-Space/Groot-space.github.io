@@ -25,7 +25,7 @@ url                      : "https://github.com/Groot-Space/Groot-space.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/Groot-Space/Groot-space.github.io"
 teaser                   : "/assets/images/leaf.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/Inheritancecover.png"
+logo                     : "/assets/images/leaf.png" # /assets/images/Inheritancecover.png
 masthead_title           : "I am Groot"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200

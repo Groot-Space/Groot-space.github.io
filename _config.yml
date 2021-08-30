@@ -21,11 +21,11 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Groot blog"
 description              : "Inha-univ,머신러닝,딥러닝,코딩테스트,유용사이트정리,개인정리."
-url                      : "https://github.com/Groot-Space/Groot-space.github.io" #"https://Falconno7.github.io"
+url                      : "https://github.com/Groot-Space/Groot-space.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/Groot-Space/Groot-space.github.io"
-teaser                   : "/assets/images/leaf.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/grootkoreaver.png" # /assets/images/Inheritancecover.png
+teaser                   : "/assets/images/blog_setting_img/leaf.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/blog_setting_img/grootkoreaver.png" # /assets/images/Inheritancecover.png
 masthead_title           : "HELLO INHERITANTOR !!"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -75,7 +75,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/Groot.png" # Open Graph/Twitter default site image
+og_image                 : "/assets/images/blog_setting_img/Groot.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Noh TaeHyun(Groot)"
-  avatar           : /assets/images/Groot.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/blog_setting_img/Groot.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I was a **Inha University student**."
   location         : "Korea, Incheon"
   email            : "xogusxogus39@naver.com"

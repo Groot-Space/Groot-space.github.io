@@ -3,6 +3,7 @@ title: "Radix Sort"
 excerpt: "기수정렬에 대한 설명을 다룹니다."
 categories:
     - 알고리즘
+    - 파이썬
 tags:
     - 정렬
 toc: true

@@ -4,6 +4,7 @@ excerpt: "Union-Find 알고리즘의 이해 및 코딩방법을 설명합니다.
 categories:
     - 알고리즘
     - 파이썬
+    - 코딩테스트
 tags:
     - Union Find
     - BOJ

@@ -100,7 +100,7 @@ layout: single
 7. 자격증
     - JPT 925
     - JLPT N1
-    - Opic IM
+    - Opic AL
     - SQLD
     - ADsP
     - 정보처리기사

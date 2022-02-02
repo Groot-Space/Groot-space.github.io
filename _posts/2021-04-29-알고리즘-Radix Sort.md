@@ -20,20 +20,20 @@ Radix Sort에 관련된 글은 [바킹독님 블로그](https://blog.encrypted.g
 
 ## 3. 프로세스 & 아이디어 설명.
 
-![image1](/assets/images/radix_0.jpg)
-![image2](/assets/images/radix_1.jpg)
-![image3](/assets/images/radix_2.jpg)
-![image4](/assets/images/radix_3.jpg)
-![image5](/assets/images/radix_4.jpg)
+![image1](/assets/images/radix sort/radix_0.jpg)
+![image2](/assets/images/radix sort/radix_1.jpg)
+![image3](/assets/images/radix sort/radix_2.jpg)
+![image4](/assets/images/radix sort/radix_3.jpg)
+![image5](/assets/images/radix sort/radix_4.jpg)
 
 
 ### 1. 100의 자릿수부터 배열에 넣으면 안되는 이유.
 * 100의 자릿수부터 넣으면 안되는 이유는 100의 자릿수 후 10의 자릿수 -> 1의 자릿수 방식으로 정렬을 하게 되면, 직전 자릿수를 통해 정렬했던 의미가 사라지기 때문입니다.
 
 * 시뮬레이션을 통해 확인해보겠습니다.
-![image6](/assets/images/radix_5.jpg)
-![image7](/assets/images/radix_6.jpg)
-![image8](/assets/images/radix_7.jpg)
+![image6](/assets/images/radix sort/radix_5.jpg)
+![image7](/assets/images/radix sort/radix_6.jpg)
+![image8](/assets/images/radix sort/radix_7.jpg)
 </br>
 
 * 이처럼 전혀 정렬이 안되는 것을 확인할 수 있습니다.

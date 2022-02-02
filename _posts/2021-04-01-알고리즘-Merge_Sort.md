@@ -26,25 +26,25 @@ Merge Sort에 관련된 글은 [바킹독님 블로그](https://blog.encrypted.g
 2. 알고리즘 구현을 위해서는 O(1)에 정렬된 2개의 배열을 정렬하면서 합치는 방법과 재귀를 사용할 줄 알아야 합니다.
 
 ### 1. 정렬된 2개의 배열을 O(1)시간에 정렬하면서 합치는 방법.
-![image1](/assets/images/merge_0.jpg)
+![image1](/assets/images/merge sort/merge_0.jpg)
 
 * 비교하는 횟수를 보시면, 두개의 배열의 크기와 비슷하게 흘러가는 것을 알 수 있습니다.
-![image2](/assets/images/merge_1.jpg)
-![image3](/assets/images/merge_2.jpg)
-![image4](/assets/images/merge_3.jpg)
+![image2](/assets/images/merge sort/merge_1.jpg)
+![image3](/assets/images/merge sort/merge_2.jpg)
+![image4](/assets/images/merge sort/merge_3.jpg)
 * 파란 색 배열의 6과 중황 색 배열의 6이 같은 수 입니다. 그림 상에선 귀찮아서 그냥 초록색 배열에 같으면 6, 6연속되게 넣었지만, 실제 코딩에서는 $>=$로 처리하기 때문에 두 개가 동시에 들어가진 않습니다. 
-![image5](/assets/images/merge_4.jpg)
-![image6](/assets/images/merge_5.jpg)
-![image7](/assets/images/merge_6.jpg)
-![image8](/assets/images/merge_7.jpg)
-![image9](/assets/images/merge_8.jpg)
+![image5](/assets/images/merge sort/merge_4.jpg)
+![image6](/assets/images/merge sort/merge_5.jpg)
+![image7](/assets/images/merge sort/merge_6.jpg)
+![image8](/assets/images/merge sort/merge_7.jpg)
+![image9](/assets/images/merge sort/merge_8.jpg)
 
 * 정렬된 2개의 배열을 합치는 이 방법은 Merge Sort의 3가지 프로세스 중 2. 정렬과 3. 합치기에 사용이 됩니다.
 
 ### 2. Merge Sort에서 재귀 사용하기.
 1. Merge Sort는 위에 설명과 밑에 그림과 같이 1. 분해, 2. 정렬, 3.합치기의 3가지 프로세스로 이뤄집니다.
 
-![image10](/assets/images/Merge_9.jpg)
+![image10](/assets/images/merge sort/Merge_9.jpg)
 
 2. 앞서 설명한 **"정렬된 2개의 배열을 O(1)시간에 정렬하면서 합치는 방법"**을 이용하면 2. 정렬과 3. 합치기 과정에서 자연스럽게 정렬이 되는 것을 알 수 있습니다. 단, **정렬된 2개의 배열**이 존재할 경우를 전제로 하기 때문에, 1. 분해 단계에서 배열의 크기가 1이 될 때까지 분해를 해 줄 필요가 생기게 됩니다. 또, 배열이 1이 되는 조건이 재귀의 Base Condition이 됩니다.
 

@@ -24,7 +24,7 @@ use_math: true
 
 Microsoft 365 Defender는 다음 그림과 같은 아키텍처로 되어있습니다.
 
-![image1](\assets\images\azure\Microsoft 365 Defender\2.j.jpg)
+![image1](\assets\images\azure\Microsoft 365 Defender\2.jpg)
 
 ### Microsoft 365 Defender 구성 요소
 

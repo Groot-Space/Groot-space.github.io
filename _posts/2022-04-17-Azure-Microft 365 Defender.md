@@ -1,246 +1,58 @@
 ---
-title: "그래프"
-excerpt: "코드 상에서 그래프를 어떻게 다뤄야 할지를 다룹니다."
+title: "Microsoft 365 Defender"
+excerpt: "Microsoft 365 Defender의 개요에 대해 다룹니다."
 categories:
-    - 알고리즘
-    - 파이썬
-    - cpp
-    - 코딩테스트
+    - Microsoft
+    - Security
+    - Azure
 tags:
-    - 그래프
-    - BOJ
-    - 느낀점
+    - 보안
+    - 솔루션
 toc: true
 toc_sticky: true
 use_math: true
 ---
-## 1. 그래프란?
-* 컴퓨터 공학에서 다루는 그래프는 아래 그림과 같은 막대 차트 등의 시각적 자료와 전혀 상관이 없습니다.
+## Microsoft 365 Defender
 
-![image1](/assets/images/그래프/슬라이드1.jpg)
+### 용어 설명
 
-* 컴퓨터 공학에서 다루는 그래프는 이산수학 / 수리논리학에서 다루는 자료구조 그래프이며, 아래 그림과 같은 모습을 띄고 있습니다.
+* XDR
 
-![image2](/assets/images/그래프/슬라이드2.jpg)
+  X는 무엇이든을 의미하는 변수. DR은 Detection and Response의 약자이며, XDR솔루션은 **탐지 및 대응 플랫폼** 으로서 엔드포인트 센서, 네트워크 센서이기도 하고, 클라우드 센서에서 적절한 데이터를 검색할 수 있으며, 이러한 모든 데이터의 분석을 중앙에서 관리.
 
-* 그래프는 당장 그래프만으로 코딩테스트에 출제되지는 않으나, 네비게이션에서 최단경로 찾기, 검색엔진에서 랭킹 산정하기 등과 같이 객체 사이의 연결 관계를 설정해야 하는 상황에서 유용하게 활용할 수 있는 자료구조입니다. 또한, 앞으로 배울 플로이드, 다익스트라 알고리즘 혹은 MST(최소신장트리) 등의 내용에서 기초가 되므로 정확하게 익혀두실 필요가 있습니다.
+### Microsoft 365 Defender 아키텍처
 
-### 1. 그래프 용어 설명.
-* **정점(Node or Vertex)**
-![image3](/assets/images/그래프/슬라이드3.jpg)
+Microsoft 365 Defender는 다음 그림과 같은 아키텍처로 되어있습니다.
 
-* **간선(Edge)**
-![image4](/assets/images/그래프/슬라이드4.jpg)
+![image1](\assets\images\azure\Microsoft 365 Defender\2.j.jpg)
 
-* **간선의 수(Degree)**
-![image5](/assets/images/그래프/슬라이드5.jpg)
+### Microsoft 365 Defender 구성 요소
 
-* **무방향 그래프(Undirected Graph)**
-![image6](/assets/images/그래프/슬라이드6.jpg)
+* 여러 도메인의 전반에 걸친 XDR을 제공합니다. XDR이라 하면, 인시던트 대기열, 자동화된 대응, 자가 치유, 위협 헌팅 및 위협 분석이 포함됩니다.
+* 전자메일 및 링크를 통한 악의적인 위협으로부터의 보호
+* 손상된 계정 보호
+  * Microsoft Defender for Identity는 ADFS(Activate Directory Federated Services)및 온프레미스 ADDS(Active Directory Domain Services)를 실행하는 서버의 신호를 수집합니다. Microsoft Defender for Identity는 이러한 신호를 이용하여 손상된 계정을 해코러부터 보호합니다.
+* 조직에서 사용하는 디바이스의 신호를 수집하고 디바이스를 보호합니다.
+* Azure AD ID 보호는 수많은 시도의 로그인에서 얻은 위험 데이터를 사용하여 사용자가 로그인을 하는 환경에서 위험을 평가합니다.
 
-* **방향 그래프(Directed Graph)**
-    * **Indegree** : 해당 노드에 들어오는 간선(Edge) 수를 나타냅니다.
-    * **Outdegree** : 해당 노드에서 나가는 간선(Edge) 수를 나타냅니다.
+### Microsoft 365 Defender 포털
 
-![image7](/assets/images/그래프/슬라이드7.jpg)
+| 기능                              | 설명                                                         |
+| --------------------------------- | ------------------------------------------------------------ |
+| Microsoft 365 규정 준수 센터      | M365 서비스에서 규정 준수 요구 사항을 관리합니다.            |
+| Azure Activate Directory          | 조직의 ID를 관리합니다.                                      |
+| Azure AD ID 보호                  | 조직의 ID에 영향을 주는 잠재적인 취약성을 검색합니다.        |
+| Azure Information Protection      | 조직의 메일과 문서를 자동으로 분류 및 보호하도록 합니다.     |
+| 클라우드용 Microsoft Defender     | 데이터 센터를 보호하고 클라우드와 온프레미스에서 Azure 및 Azure 이외 워크로드에 대한 지능형 위협 방지를 제공합니다. |
+| Microsoft Defender for Cloud Apps | 정교한 분석을 통해 클라우드 앱을 파악하여 사이버 위협을 식별하고 방지합니다. |
 
-* **사이클(Cycle)**
-    * **Cyclic Graph** : 그래프 안에 탈출할 수 없는 순환이 존재하는 것.
-    * **Acyclic Graph** : 사이클이 존재하지 않는 그래프
+### 인시던트 관리
 
-![image8](/assets/images/그래프/슬라이드8.jpg)
-![image9](/assets/images/그래프/슬라이드9.jpg)
+ 인시던트는 네트워크에서 악의적인 이벤트나 활동이 확인될 때 생성되는 관련 경고를 기반으로 합니다.  인시던트는 네트워크에서 악의적인 이벤트나 활동이 확인될 때 생성되는 관련 경고를 기반으로 합니다. 관련 경고를 인시던트로 그룹화하면 보안 방어자가 공격을 포괄적으로 파악할 수 있습니다.예를 들어, 보안 방어자는 공격이 시작된 위치, 사용된 전술 및 공격이 네트워크까지 이동한 거리를 확인할 수 있습니다. 또한 영향을 받는 디바이스, 사용자 및 사서함 수, 영향의 심각도, 영향을 받는 엔터티에 관한 기타 세부 정보 같은 공격 범위를 확인할 수 있습니다.
 
-* **완전 그래프(Complete Graph)**
-![image10](/assets/images/그래프/슬라이드10.jpg)
+### 경고 관리 및 조사
 
-* **연결 그래프(Connected Graph)**
-![image11](/assets/images/그래프/슬라이드11.jpg)
+* Microsoft 365 Defender에서는 관련 경고가 집계되어 인시던트를 형성합니다. 인시던트는 항상 더 광범위한 공격 컨텍스트를 제공하지만 더 심도 있는 분석이 필요한 경우 경고를 분석하는 것이 유용할 수 있습니다.경고 큐에는 현재 경고 집합이 표시됩니다. Microsoft 365 Defender 포털의 빠른 실행 시 인시던트 및 경고 > 인시던트에서 경고 큐를 확인할 수 있습니다.
 
-* **단순 그래프(Simple Graph)**
-    * 두 정점 사이의 간선이 1개 이하이고 루프가 존재하지 않는 그래프.
-    * 루프 : 한 정점에서 시작하여 같은 정점으로 돌아오는 간선.
+![image3](\assets\images\azure\Microsoft 365 Defender\3.jpg)
 
-![image12](/assets/images/그래프/슬라이드12.jpg)
-
-* 간과하기 쉬운 점.
-    1. 그래프는 꼭 연결되어 있을 필요가 없습니다.
-    2. 두 정점 사이의 간선이 반드시 1개 이하일 필요가 없습니다.
-    2. 간선이 반드시 서로 다른 두 정점을 연결해야 할 필요도 없습니다.
-
-## 2.그래프의 표현 방법.
-### 1. 인접 행렬
-* 각 정점에 번호가 붙어있다고 할 때, 연결된 두 정점에는 **1**을, 연결되지 않은 두 정점에는 **0**을 표시하면 됩니다.
-
-* Undirected graph로 예시를 들겠습니다.
-![image13](/assets/images/그래프/슬라이드13.jpg)
-![image14](/assets/images/그래프/슬라이드14.jpg)
-
-* table[2][3]이 1이라는 뜻은 2에서 3으로 가는 간선이 있다는 뜻입니다.
-
-* 엄밀하게 1 혹은 0으로만 나타내는 경우, 두 점을 잇는 간선이 여러 개일 경우에 문제가 생길 수 있지만, 대부분의 문제에서 주어지는 그래프는 단순 그래프이므로 고려하지 않도록 하겠습니다.
-
-
-* 인접 행렬로 그래프를 나타내면 정점이 V개이고 간선이 E개일 때 어떤 두점이 연결되어 있는지를 시간복잡도 $O(1)$에 알 수 있습니다.
-
-* 공간복잡도는 가로 세로의 각각 V(정점의 갯수)인 2차원 배열이 필요하니 $O(V^2)$의 공간이 필요합니다.
-
-* 어떤 정점이 연결되어 있는 모든 목록을 알아내고 싶을 때, 갯수와 무관하게 시간복잡도가 O(V)가 됩니다.
-
-#### 1. 코드
-
-* 지금까지 알고리즘 포스팅에서 다뤘던 코드들은 대부분 python기반으로 다뤘었습니다. python기반으로 다룬데에는 크게 두가지 이유가 있습니다. 1. 가시성, 2. C언어 혹은 cpp와 크게 차이가 없을 것 같기 때문. 하지만, 그래프의 표현법에서는 기본 자료형으로 list를 제공하는 python과 cpp의 차이가 크기 때문에 원초적인 지식함향을 위해 cpp코드도 함께 다루도록 하겠습니다.
-
-* 정점의 갯수 V와 간선의 갯수 E가 주어진 후, E줄에 걸쳐 간선이 주어진다고 가정합니다. 이러한 입력 방식은 코딩 문제의 대부분의 문제에서 사용하고 있는 입력 형식입니다. 이 때 간선을 입력 받으면서 adj_matrix 변수에 1을 적절하게 갱신해주기만 하면 됩니다. 간선이 단방향일 경우 adj_matrix[u][v]만 1로 만들고, 양방향일 경우에는 adj_matrix[u][v], adj_matrix[v][u]를 모두 1로 만들면 됩니다.
-
-* **Directed Graph**일 경우.
-
-```cpp
-int adj_matrix[10][10] = {};
-int v, e; //정점과 간선의 갯수.
-cin >> v >> e;
-for(int i = 0; i < e; i++){
-    int u, v;
-    cin >> u >> v;
-    adj_matrix[u][v] = 1;
-}
-```
-
-```python
-from sys import stdin
-v, e = list(map(int,stdin.readline().split()))
-adj_matrix = [[0 for i in range(v+1)] for j in range(v+1)]
-for i in range(e):
-    u, v = list(map(int, stdin.readline().split()))
-    adj_matrix[u][v] = 1
-```
-
-* **Undirected Graph**일 경우
-
-```cpp
-int adj_matrix[10][10] = {};
-int v, e;
-cin >> v >> e;
-for(int i = 0; i < e; i++){
-    int u, v;
-    cin >> u >> v;
-    adj_matrix[u][v] = 1;
-    adj_matrix[v][u] = 1;
-}
-```
-
-```python
-from sys import stdin
-v, e = list(map(int,stdin.readline().split()))
-adj_matrix = [[0 for i in range(v+1)] for j in range(v+1)]
-for i in range(e):
-    u, v = list(map(int, stdin.readline().split()))
-    adj_matrix[u][v] = 1
-    adj_matrix[v][u] = 1
-```
-
-### 2.인접 리스트(Adjacency List)
-* 인접 리스트 방식은 인접 행렬과 비교했을 때, V(정점)이 크고 E(간선)이 상대적으로 작은 상황에서 공간을 절약할 수 있는 방식입니다.
-
-* 코딩테스트에서는 인접 행렬보다 훨씬 많이 사용해야 하는 방식입니다.
-
-![image15](/assets/images/그래프/슬라이드15.jpg)
-![image16](/assets/images/그래프/슬라이드16.jpg)
-
-* Directed Graph일 경우에는 한 쪽만 넣어주면 됩니다.
-
-* 인접 리스트에서는 O(V + E)의 공간이 필요합니다.
-
-#### 1.코드
-* STL을 사용할 수 있는 경우.(방향 그래프)
-
-```cpp
-vector<int> adj[10];
-int v, e;
-cin >> v >> e;
-for(int i = 0; i < e; i++){
-    int u, v;
-    cin >> u >> v;
-    adj[u].push_back(v);
-}
-```
-
-```python
-from sys import stdin
-v, e = list(map(int,stdin.readline().split()))
-adj_matrix = [[] for i in range(v+1)]
-for i in range(e):
-    u, v = list(map(int, stdin.readline().split()))
-    adj_matrix[u].append(v)
-
-```
-
-* STL을 사용할 수 있는 경우.(무방향 그래프)
-
-```cpp
-vector<int> adj[10];
-int v,e;
-cin >> v >> e;
-for(int i = 0; i < e; i++){
-    int u, v;
-    cin >> u >> v;
-    adj[u].push_back(v);
-    adj[v].push_back(u);
-}
-```
-
-* STL을 사용할 수 없는 경우(방향 그래프)
-
-```cpp
-int edge[10][10];
-int deg[10]; // 각 정점의 outdegree
-int* adj[10];
-int idx[10]; // adj[i]에서 새로운 정점을 추가할 때의 위치
-int main(){
-    int v, e;
-    cin >> v >> e;
-    for(int i = 0; i < e; i++){
-        cin >> edge[i][0] >> edge[i][1];
-        deg[edge[i][0]]++;
-    }
-    for(int i = 1; i <= v; i++){
-        adj[i] = new int[deg[i]];
-    }
-    for(int i = 0; i < e; i++){
-        int u = edge[i][0], v = edge[i][1];
-        adj[u][idx[u]] = v;
-        idx[u]++;
-    }
-}
-```
-
-* STL을 사용할 수 없는 경우(무방향 그래프)
-
-```cpp
-int edge[10][10];
-int deg[10]; // 각 정점의 outdegree
-int* adj[10];
-int idx[10]; // adj[i]에서 새로운 정점을 추가할 때의 위치
-int main(){
-    int v, e;
-    cin >> v >> e;
-    for(int i = 0; i < e; i++){
-        cin >> edge[i][0] >> edge[i][1];
-        deg[edge[i][0]]++;
-        deg[edge[i][1]]++;
-    }
-    for(int i = 1; i <= v; i++){
-        adj[i] = new int[deg[i]];
-    }
-    for(int i = 0; i < e; i++){
-        int u = edge[i][0], v = edge[i][1];
-        adj[u][idx[u]] = v;
-        idx[u]++;
-        adj[v][idx[v]] = u;
-        idx[v]++;
-    }
-}
-```
-### 3.인접 행렬과 인접 리스트의 비교
-
-![image17](/assets/images/그래프/슬라이드17.jpg)
